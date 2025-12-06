@@ -37,7 +37,10 @@ object DatabaseFactory {
 
         // create Schema
         transaction(database) {
-            SchemaUtils.create(ProjectTable)
+            SchemaUtils.create(
+                ProjectTable,
+                ImageTable,
+                )
         }
 
         //
